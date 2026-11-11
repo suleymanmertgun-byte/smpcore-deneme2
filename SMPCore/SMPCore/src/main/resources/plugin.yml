@@ -1,0 +1,17 @@
+name: SMPCore
+version: 1.0
+main: com.smp.core.SMPCore
+api-version: '26.3'
+description: SMP takim ve ozel esya sistemi
+commands:
+  takim:
+    description: Takim komutlari
+    aliases: [team, t]
+  tc:
+    description: Takim sohbeti
+  ozel:
+    description: Ozel esyalar
+    permission: ozel.admin
+permissions:
+  ozel.admin:
+    default: op

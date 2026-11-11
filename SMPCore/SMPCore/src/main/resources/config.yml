@@ -1,0 +1,39 @@
+team:
+  friendly-fire: false   # true yaparsan takim uyeleri birbirine vurabilir
+  max-members: 10
+
+# Merinyum madeni (sadece yeni olusan chunk'larda cikar)
+merinyum:
+  ore-block: NETHER_GOLD_ORE   # Overworld'de dogal olarak olmayan bir blok, merinyum cevheri gorunumu
+  max-y: -30                   # bu yukseklik ve altinda cikar
+  veins-per-chunk: 1.5         # chunk basina ortalama damar sayisi
+  vein-size: 4                 # damar buyuklugu
+  ore-hardness: 25.0           # kirilma sertligi. Obsidyen = 50, yarisi = 25. (Nether altin cevheri normalde 3)
+  sword:
+    max-bonus-health: 20.0     # kill'lerle kazanilabilecek en fazla ekstra can (20 = 10 kalp)
+    count-all-mobs: false      # false: sadece dusman moblar ve oyuncular kill sayilir
+
+# Diger ozel esyalar (istedigin kadar ekleyebilirsin). Renkler icin & kullan.
+items:
+  buz_kiran:
+    material: DIAMOND_SWORD
+    name: "&b&lBuz Kıran"
+    unbreakable: true
+    lore:
+      - "&7Yıldırım çağırır."
+    enchants:
+      sharpness: 7
+      unbreaking: 5
+    abilities:
+      lightning-chance: 0.15
+      lightning-damage: 6
+  titan_kazma:
+    material: NETHERITE_PICKAXE
+    name: "&6&lTitan Kazma"
+    unbreakable: true
+    lore:
+      - "&7Çok hızlı kazar."
+    enchants:
+      efficiency: 10
+      fortune: 5
+      mending: 1
